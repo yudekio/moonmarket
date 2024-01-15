@@ -1,11 +1,13 @@
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import App from "./src/App.tsx";
 import "./index.css";
-import { ModalState } from "./context/ModalContext.tsx";
+import { ModalState } from "./src/context/ModalContext.tsx";
 import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./components/ThemeProvider.tsx";
+import { ThemeProvider } from "./src/components/ThemeProvider.tsx";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 
 root.render(
   <BrowserRouter>
